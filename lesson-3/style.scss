@@ -1,0 +1,41 @@
+$card-width: 240px;
+$card-height: 160px;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.gallery {
+    &__title {
+        color: #404040;
+        text-align: center;
+        margin: 10px 0;
+    }
+    &__items {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        width: 760px;
+        margin: 0 auto;
+    }
+}
+
+.gallery-item {
+    border: 1px solid grey;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    &__image {
+        width: $card-width;
+        height: $card-height;
+        background-size: cover;
+        background-position: center;
+    }
+    &__audio, &__video {
+        width: $card-width;
+        height: $card-height;
+    }
+    &__title {
+        text-align: center;
+        margin: 3px 0;
+    }
+}
